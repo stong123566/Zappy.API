@@ -35,6 +35,8 @@ auth string has been passed).
 - **address_number** [Require, street number]
 - **address_street** [Require, street name]
 - **address_suburb** [Require, suburb]
+- **contact_name** [Require, contact name]
+- **email** [Require, sender email]
 
 *DeliveryAddress*
 - **address_body** [Require, unit number + street number + street name]
@@ -44,6 +46,7 @@ auth string has been passed).
 - **address_number** [Require, street number]
 - **address_street** [Require, street name]
 - **address_suburb** [Require, suburb]
+- **contact_name** [Require, contact name]
 
 *Parcelport satchel list*
 <table>
