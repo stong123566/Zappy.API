@@ -49,19 +49,19 @@ Content-Type: application/json;
 ***
 
 # Shipping
-- **[<code>POST</code> /api/1.0/shippingoptions](Shipping/GetShippingMethod.md)** returns a list of available shipping methods
+- **[<code style="background-color:#009D77">POST</code> /api/1.0/shippingoptions](Shipping/GetShippingMethod.md)** returns a list of available shipping methods
 
 # Make a consignment
-- **[<code>PUT</code> /api/1.0/consignment](Consignment/PostConsignment.md)** Put a consignment
+- **[<code style="background-color:#E97500">PUT</code> /api/1.0/consignment](Consignment/PostConsignment.md)** Put a consignment
 
 # Label
-- **[<code>GET</code> /api/1.0/labels](Label/GetLabel.md)** Get a url of label(PDF)
+- **[<code style="background-color:#1391FF">GET</code> /api/1.0/labels](Label/GetLabel.md)** Get a url of label(PDF)
 
 # Booking
-- **[<code>POST</code> /api/1.0/bookings](Booking/PostBooking.md)** Booking a pickup time
+- **[<code style="background-color:#009D77">POST</code> /api/1.0/bookings](Booking/PostBooking.md)** Booking a pickup time
 
 # Tracking
-- **[<code>GET</code> /api/1.0/tracking](Tracking/GetTracking.md)** Get tracking history of the consignment
+- **[<code style="background-color:#1391FF">GET</code> /api/1.0/tracking](Tracking/GetTracking.md)** Get tracking history of the consignment
 
 # Third Party orders
-- **[<code>PUT</code> /api/1.0/thirdpartyorders](ThirdPartyOrders/PutThirdPartyOrders.md)** Put a list of third party orders
+- **[<code style="background-color:#E97500">PUT</code> /api/1.0/thirdpartyorders](ThirdPartyOrders/PutThirdPartyOrders.md)** Put a list of third party orders
