@@ -49,7 +49,7 @@ Content-Type: application/json;
 ***
 
 # Shipping
-- **[<code style="background-color:#009D77">POST</code> /api/1.0/shippingoptions](Shipping/GetShippingMethod.md)** returns a list of available shipping methods
+- **[<code style="background-color:#009D77">POST{color:#009D77}</code> /api/1.0/shippingoptions](Shipping/GetShippingMethod.md)** returns a list of available shipping methods
 
 # Make a consignment
 - **[<code style="background-color:#E97500">PUT</code> /api/1.0/consignment](Consignment/PostConsignment.md)** Put a consignment
