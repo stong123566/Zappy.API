@@ -44,9 +44,9 @@ auth string has been passed).
 - **address_number** [Require, street number]
 - **address_street** [Require, street name]
 - **address_suburb** [Require, suburb]
-- **email** [Optional, email]
+- **contact_name** [Require, contact name]
+- **email** [Require, sender email]
 - **company_name** [Optional, company name]
-- **contact_name** [Optional, contact name]
 - **phone** [Optional, contact phone]
 - **instruction** [Optional, instruction]
 
@@ -58,9 +58,9 @@ auth string has been passed).
 - **address_number** [Require, street number]
 - **address_street** [Require, street name]
 - **address_suburb** [Require, suburb]
+- **contact_name** [Require, contact name]
 - **email** [Optional, email]
 - **company_name** [Optional, company name]
-- **contact_name** [Optional, contact name]
 - **phone** [Require if TNT, contact phone]
 - **instruction** [Optional, instruction]
 
@@ -71,44 +71,40 @@ auth string has been passed).
 *Parcelport satchel list*
 <table>
   <tr>
-    <td>Satchel name</td>
-    <td>code</td>
+    <th>Satchel name</th>
+    <th>code</th>
   </tr>
   <tr>
-    <td>Satchel 140x230 DLE Letter Size</td>
+    <td>Satchel 130x240 DLE Letter Size</td>
     <td>dle</td>
   </tr>
   <tr>
-    <td>Satchel 150x210 Small A5 Size</td>
+    <td>Satchel 185x280 A5 Size</td>
     <td>a5</td>
   </tr>
   <tr>
-    <td>Satchel Small A5 Bubble</td>
-    <td>a5b</td>
-  </tr>
-  <tr>
-    <td>Satchel 210x297 A4 Size</td>
+    <td>Satchel 250x325 A4 Size</td>
     <td>a4</td>
   </tr>
   <tr>
-    <td>Satchel A4 Bubble</td>
-    <td>a4b</td>
+    <td>Satchel 275x380 Foolscap Size</td>
+    <td>fs</td>
   </tr>
   <tr>
-    <td>Satchel 280x350 Medium Size</td>
-    <td>med</td>
-  </tr>
-  <tr>
-    <td>Satchel Medium Bubble</td>
-    <td>medb</td>
-  </tr>
-  <tr>
-    <td>Satchel 297x420 Large A3 Size</td>
+    <td>Satchel 325x440 A3 Size</td>
     <td>a3</td>
   </tr>
   <tr>
-    <td>Satchel 450x450 Extra Large A2 Size</td>
+    <td>Satchel 395x440 Lineflow Size</td>
+    <td>lf</td>
+  </tr>
+  <tr>
+    <td>Satchel 445x440 Extra Large Size</td>
     <td>xl</td>
+  </tr>
+  <tr>
+    <td>Satchel 450x610 A2 Size</td>
+    <td>a2</td>
   </tr>
 </table>
 
