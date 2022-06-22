@@ -128,7 +128,7 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
   "email_to_recipient": 1,
   "is_signature": 1,
   "QuoteRequestID": "ab98ccf7-655f-4e53-af99-395c65c962b3",
-   "parcels": [
+  "parcels": [
     {
       "length": 1,
       "height": 1,
@@ -137,32 +137,26 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     }
   ],
   "DeliveryAddress": {
-    "address_body": "17 Witbrock Cresent",
+    "address_body": "17 Witbrock Crescent",
     "address_city": "Christchurch",
-    "company_name": "Test",
-    "contact_name": "Test Tony",
     "address_country": "NZ",
-    "email": "187@parcelport.co.nz",
-    "instruction": "TEST",
-    "phone": 1234343,
     "address_postcode": 8053,
     "address_number": "17",
     "address_street": "Witbrock Crescent",
-    "address_suburb": "Burnside"
+    "address_suburb": "Burnside",
+    "contact_name": "Alice"
   },
   "PickupAddress": {
     "address_body": "12 Pitt Street",
     "address_city": "Auckland",
-    "company_name": "Test",
-    "contact_name": "Test Jimmy",
     "address_country": "NZ",
-    "email": "187@parcelport.co.nz",
-    "instruction": "TEST",
-    "phone": 1234343,
     "address_postcode": 1010,
-    "address_number": "4512",
+    "address_number": "12",
     "address_street": "Pitt Street",
-    "address_suburb": "Auckland Central"
+    "address_suburb": "Auckland Central",
+    "contact_name": "bob",
+    "email": "bob@domain.com"
+
   },
   "booking":{
       "pickup_option": 1,

@@ -123,7 +123,8 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     "address_postcode": 8053,
     "address_number": "17",
     "address_street": "Witbrock Crescent",
-    "address_suburb": "Burnside"
+    "address_suburb": "Burnside",
+    "contact_name": "Alice"
   },
   "PickupAddress": {
     "address_body": "12 Pitt Street",
@@ -132,7 +133,10 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     "address_postcode": 1010,
     "address_number": "12",
     "address_street": "Pitt Street",
-    "address_suburb": "Auckland Central"
+    "address_suburb": "Auckland Central",
+    "contact_name": "bob",
+    "email": "bob@domain.com"
+
   },
 }
 ```
