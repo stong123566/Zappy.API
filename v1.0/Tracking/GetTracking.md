@@ -25,11 +25,32 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
 ``` json
 [
     {
-        "pc": 2727123,
-        "description": "Pick up booked, waiting for pickup",
-        "date_added": "2019-02-13T17:36:59.91",
-        "status_time": "2019-02-13T17:36:59.91",
-        "notes": "GE322435603NZ"
+        "consignment_ref": "0000000000000",
+        "status": 4,
+        "description": "Delivered",
+        "notes": "Delivery",
+        "status_time": "2022-06-13T07:40:20.573"
+    },
+    {
+        "consignment_ref": "0000000000000",
+        "status": 11,
+        "description": "Parcel is at depot",
+        "notes": "Parcel Sortation",
+        "status_time": "2022-06-13T01:22:02"
+    },
+    {
+        "consignment_ref": "0000000000000",
+        "status": 11,
+        "description": "Parcel is at depot",
+        "notes": "Parcel Sortation",
+        "status_time": "2022-06-11T11:36:55"
+    },
+    {
+        "consignment_ref": "0000000000000",
+        "status": 3,
+        "description": "Picked up",
+        "notes": "Acceptance",
+        "status_time": "2022-06-10T16:26:20.14"
     }
 ]
 ```
