@@ -26,7 +26,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
 [
     {
         "consignment_ref": "0000000000000",
-        "nzpost_tracking_ref": "11111111111111111111",
         "status": 4,
         "description": "Delivered",
         "notes": "Delivery",
@@ -34,7 +33,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     },
     {
         "consignment_ref": "0000000000000",
-        "nzpost_tracking_ref": "11111111111111111111",
         "status": 11,
         "description": "Parcel is at depot",
         "notes": "Parcel Sortation",
@@ -42,7 +40,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     },
     {
         "consignment_ref": "0000000000000",
-        "nzpost_tracking_ref": "11111111111111111111",
         "status": 11,
         "description": "Parcel is at depot",
         "notes": "Parcel Sortation",
@@ -50,7 +47,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     },
     {
         "consignment_ref": "0000000000000",
-        "nzpost_tracking_ref": "11111111111111111111",
         "status": 3,
         "description": "Picked up",
         "notes": "Acceptance",
