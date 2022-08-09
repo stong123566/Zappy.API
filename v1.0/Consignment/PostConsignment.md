@@ -180,7 +180,16 @@ The requestID need to be added in the request when you create a consignment, and
     ],
     "consignmentRefEncode": [
         "SqzdUGp2YsOsMgN3e9WEBw=="
-    ]
+    ],
+    "consignmentLabelRef": [
+        "39U3HK"
+    ],
+    "consignmentTrackinglRef": [
+        "00894210320451606683"
+    ],
+    "batchOrderId": null,
+    "totalPrice": 0.00,
+    "totalTax": 0.00
 }
 ```
 
