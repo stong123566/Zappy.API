@@ -26,6 +26,7 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
 [
     {
         "consignment_ref": "0000000000000",
+        "carrier_tracking_ref": "00000000000000000",
         "status": 4,
         "description": "Delivered",
         "notes": "Delivery",
@@ -33,6 +34,7 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     },
     {
         "consignment_ref": "0000000000000",
+        "carrier_tracking_ref": "00000000000000000",
         "status": 11,
         "description": "Parcel is at depot",
         "notes": "Parcel Sortation",
@@ -40,6 +42,7 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     },
     {
         "consignment_ref": "0000000000000",
+        "carrier_tracking_ref": "00000000000000000",
         "status": 11,
         "description": "Parcel is at depot",
         "notes": "Parcel Sortation",
@@ -47,6 +50,7 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     },
     {
         "consignment_ref": "0000000000000",
+        "carrier_tracking_ref": "00000000000000000",
         "status": 3,
         "description": "Picked up",
         "notes": "Acceptance",
@@ -54,4 +58,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     }
 ]
 ```
+* consignment_ref is only worked with Parcelport services.
+* carrier_tracking_ref is the reference number for tracking in the carrier services.
 * Return an empty result if there are no any tracking.
