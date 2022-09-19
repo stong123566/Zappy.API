@@ -14,7 +14,7 @@ URL: https://api.parcelport.co.nz/token
 ## Required Parameters:
 * username [Require]
 * password [Require]
-* grant_type [Require]
+* grant_type [Require] [Must be 'password']
 
 ## Example
 Request 
@@ -35,14 +35,12 @@ Content-Type: application/json;
 **Responses**
 ``` json
 {
-    "access_token": "U995BbNx_JQZPozAd6QZPBUc6M7PMwXQUMS_dU42IJ-bDd635VLC1q-ksDO2EnUCsJvo6hrFiiE_KkXcsDOguj1wISMudM45DTWNwE9E-4Ik0DdK6e-U-KU8CSdXyD8K0lJArHMpff7m1DWIV0OgBDY73S7w18P12ygXRZBcbiwkynQpKwDgR6WzQouTmSOoXcwYajV8aDo7fKNqyDn32n7hY79ADz8-yfRUK_f7_ynIvvyuoJI43NsFNy46d4YYjD9zyU-rz0tu-kTVkWfq4zVT3msOfiMZCSkCPgUuOeXvglsf-iyktWZZRAg4p1cEVVc3-Wo0wRuuMwqoA0Dx_Q",
-    "token_type": "bearer",
-    "expires_in": 1799,
-    "client_id": "187",
-    "userName": "test",
-    ".issued": "Thu, 30 Aug 2018 23:31:53 GMT",
-    ".expires": "Fri, 31 Aug 2018 00:01:53 GMT"
-} 
+    "isSuccess": true,
+    "accessToken": "XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI8iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z",
+    "access_token": "XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI8iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z",
+    "expiresIn": 86399,
+    "tokenType": "bearer"
+}
 ```
 
 ***
