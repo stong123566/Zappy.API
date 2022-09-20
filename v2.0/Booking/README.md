@@ -2,37 +2,44 @@
 
 Creates a pick up event for the requested Pace service.
 
+- URL: https://api.parcelport.co.nz/api/2.0/booking
+- Http Method: POST
+
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
-URL: https://api.parcelport.co.nz/api/1.0/bookings?client_id={client_id}&consignmentRef={consignmentRef}
 
 ## Required Parameters:
-* client_id [Require, e.g. "187"]
-* consignmentRef [Require, e.g. "00187037343"]
+- consignmentRef [Require, value from /api/2.0/consignment, e.g. "007862951562"]
+- pickupDate [Optional, default DateTime.Now]
 
 ## Example
-Request
-POST https://api.parcelport.co.nz/api/1.0/bookings?client_id=187&consignmentRef=00187034567
 
-**Headers**
+**Request Headers**
+```
 Content-Type: application/json;
+```
 
-**Authorization**
-Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_t9x2hDo_tP840QIXfUmg0AGmRBfRHfeTeCjBGrK4ezMuLQ0jsyoDAb3cxUhkMniuJHYfSWhKlvyuQZPDqAffr4ggCY9qiojTgRm1s-EubJZK941SrtXBmTQKnkAWcru5MmXQvm0ziNAfZ_JhCKGoNHhpmnJVfQvGYMQNjMRknoE6GZl63GFZZ9tjMz2ICBPqEJsX67fWOoB2adbr58hA72omCMgLaX-1-DhYjlEnb_qhGljklPL3Qo6ohgykA
+**Request Authorization**
+```
+Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI87iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z
+```
 
-**Body**
+**Request Body**
 ``` json
 {
-  "booking":{
-      "pickup_option": 0,
-  }
+  "consignmentRef": "007862951562",
+  "pickupDate": "2022/09/20 12:30"
 }
 ```
 
 **Responses**
 ``` json
 {
-    "success": true
+    "isSuccess": false,
+    "statusCode": 500,
+    "errors": [
+        "Book processing failed. Please try again later."
+    ]
 }
 ```

@@ -1,195 +1,65 @@
 # Create a new consignment
 
 Allows third-party systems to make consignments and get consignment tracking
-numbers based on the passed shipping method id, sender's address, recipient's address
-and parcel(s)’ dimensions. 
+numbers based on the passed quoteRequestId and carrierMethodId. 
 
-URL: https://api.parcelport.co.nz/api/1.0/consignment?client_id=786
+- URL: https://api.parcelport.co.nz/api/2.0/consignment
+- Http Method: POST
 
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
 ## Required Parameters:
-* carrier_id [Optional, value from quotes e.g. "ph"]
-* carrier_method_id [Require, value from quotes e.g. "phms"]
-* carrier_method_code [Require, value from quotes e.g. "MS"]
-* QuoteRequestID [Require, value from quotes]
-* authority_to_leave [Optional, 0 or 1, 1 if authority to leave]
-* is_signature [Optional depend on Carrier's quotes, 0 or 1, 1 if need signature]
-* email_to_recipient [Require, 0 or 1, 1 if email to recipient]
-
-*Parcels*
-- **length** - [Require Length of the parcel cm]
-- **width** - [Require Width of the parcel cm]
-- **height** - [Require Length of the parcel cm]
-- **weight** - [Require Weight of the parcel Kg]
-- **volume** - [Optional Volume of the parcel]
-- **kind** - [Optional default is 0, 1 if using satchel]
-- **group_id** - [Optional add the satchel code if using satchel]
-- **cust_ref** - [Optional reference of the item]
-- **insurance_required** - [Require if International, true / false]
-- **insured_value_amount** - [Require if International, insured value]
-- **currency** - [Optional, Default NZD, insured value currency]
-- **parcel_contents** [Require if International]
-  - **description** - [Require if International, description of your products]
-  - **quantity** - [Require if International, quantity of your products]
-  - **weight** - [Require if International, weight of your products]
-  - **value** - [Require if International, value of your products]
-
-*PickupAddress*
-- **address_body** [Require, unit number + street number + street name]
-- **address_city** [Require, city]
-- **address_country** [Require, country code, e.g., "NZ" for NewZealand]
-- **address_postcode** [Require, postcode]
-- **address_number** [Require, street number]
-- **address_street** [Require, street name]
-- **address_suburb** [Require, suburb]
-- **contact_name** [Require, contact name]
-- **email** [Require, sender email]
-- **company_name** [Optional, company name]
-- **phone** [Optional, contact phone]
-- **instruction** [Optional, instruction]
-
-*DeliveryAddress*
-- **address_body** [Require, unit number + street number + street name]
-- **address_city** [Require, city]
-- **address_country** [Require, country code, e.g., "NZ" for NewZealand]
-- **address_postcode** [Require, postcode]
-- **address_number** [Require, street number]
-- **address_street** [Require, street name]
-- **address_suburb** [Require, suburb]
-- **contact_name** [Require, contact name]
-- **email** [Optional, email]
-- **company_name** [Optional, company name]
-- **phone** [Require if TNT, contact phone]
-- **instruction** [Optional, instruction]
+* quoteRequestId [Require, value from /api/2.0/rate]
+* carrierMethodId [Require, value from /api/2.0/rate, e.g. "CPOLTPA5"]
+* emailToRecipient [Optional, 0 or 1, 1 if email to recipient]
 
 *Booking*
-- **pickup_option** [Require, 0 or 1, 0 if booking now]
-- **instructions** [Optional, city]
+- **pickupOption** [Optional, 0 or 1, default 1 for booking later, 0 if booking now]
+- **pickupDate** [Optional, default DateTime.Now]
 
-*Parcelport satchel list*
-<table>
-  <tr>
-    <th>Satchel name</th>
-    <th>code</th>
-  </tr>
-  <tr>
-    <td>Satchel 130x240 DLE Letter Size</td>
-    <td>dle</td>
-  </tr>
-  <tr>
-    <td>Satchel 185x280 A5 Size</td>
-    <td>a5</td>
-  </tr>
-  <tr>
-    <td>Satchel 250x325 A4 Size</td>
-    <td>a4</td>
-  </tr>
-  <tr>
-    <td>Satchel 275x380 Foolscap Size</td>
-    <td>fs</td>
-  </tr>
-  <tr>
-    <td>Satchel 325x440 A3 Size</td>
-    <td>a3</td>
-  </tr>
-  <tr>
-    <td>Satchel 395x440 Lineflow Size</td>
-    <td>lf</td>
-  </tr>
-  <tr>
-    <td>Satchel 445x440 Extra Large Size</td>
-    <td>xl</td>
-  </tr>
-  <tr>
-    <td>Satchel 450x610 A2 Size</td>
-    <td>a2</td>
-  </tr>
-</table>
 
 ## Example
-Request
-PUT https://api.parcelport.co.nz/api/1.0/consignment?client_id=110
 
-**Headers**
+**Request Headers**
+```
 Content-Type: application/json;
+```
 
-**Authorization**
-Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_t9x2hDo_tP840QIXfUmg0AGmRBfRHfeTeCjBGrK4ezMuLQ0jsyoDAb3cxUhkMniuJHYfSWhKlvyuQZPDqAffr4ggCY9qiojTgRm1s-EubJZK941SrtXBmTQKnkAWcru5MmXQvm0ziNAfZ_JhCKGoNHhpmnJVfQvGYMQNjMRknoE6GZl63GFZZ9tjMz2ICBPqEJsX67fWOoB2adbr58hA72omCMgLaX-1-DhYjlEnb_qhGljklPL3Qo6ohgykA
+**Request Authorization**
+```
+Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI87iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z
+```
 
-**Body**
+**Request Body**
 ``` json
 {
-  "authority_to_leave": 0,
-  "carrier_id": "ph",
-  "carrier_method_id": "phtd",
-  "carrier_method_code": "TD",
-  "email_to_recipient": 1,
-  "is_signature": 1,
-  "QuoteRequestID": "ab98ccf7-655f-4e53-af99-395c65c962b3",
-  "parcels": [
-    {
-      "length": 1,
-      "height": 1,
-      "width": 1,
-      "weight": 1,
-    }
-  ],
-  "DeliveryAddress": {
-    "address_body": "17 Witbrock Crescent",
-    "address_city": "Christchurch",
-    "address_country": "NZ",
-    "address_postcode": 8053,
-    "address_number": "17",
-    "address_street": "Witbrock Crescent",
-    "address_suburb": "Burnside",
-    "contact_name": "Alice"
-  },
-  "PickupAddress": {
-    "address_body": "12 Pitt Street",
-    "address_city": "Auckland",
-    "address_country": "NZ",
-    "address_postcode": 1010,
-    "address_number": "12",
-    "address_street": "Pitt Street",
-    "address_suburb": "Auckland Central",
-    "contact_name": "bob",
-    "email": "bob@domain.com"
-
-  },
-  "booking":{
-      "pickup_option": 1,
-  }
+  "quoteRequestId": "f7788fac-b4e0-478d-93ab-028a10f27d22",
+  "carrierMethodId": "CPOLTPA5",
+  "emailToRecipient": "1"
+//   "booking":{
+    // "pickupOption": "0",
+    // "pickupDate": "2022/09/20 12:30"
+//   }
 }
 ```
+
 **Responses**
 A JSON encoded string contains all the valid shipping methods with shipping method ids.
 The requestID need to be added in the request when you create a consignment, and it will be expired.
 
 ``` json
 {
-    "message": "",
     "isSuccess": true,
-    "errorMessages": {},
-    "consignmentRef": [
-        "007860396061"
-    ],
-    "consignmentLocalIDs": [
-        396061
-    ],
-    "consignmentRefEncode": [
-        "SqzdUGp2YsOsMgN3e9WEBw=="
-    ],
-    "consignmentLabelRef": [
-        "39U3HK"
-    ],
-    "consignmentTrackinglRef": [
-        "00894210320451606683"
-    ],
-    "batchOrderId": null,
-    "totalPrice": 0.00,
-    "totalTax": 0.00
+    "data": {
+        "consignmentRef": [
+            "007862951562"
+        ],
+        "consignmentTrackinglRef": [
+            "2541300295156201AKL025JN"
+        ],
+        "totalPrice": 2.93
+    }
 }
 ```
 

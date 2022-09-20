@@ -5,28 +5,38 @@ Request for getting a URL to download the label in PDF from our main site https:
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
-URL: https://api.parcelport.co.nz/api/1.0/labels?client_id={clientId}&consignmentRef={consignmentRef}
+- URL: https://api.parcelport.co.nz/api/2.0/label
+- Http Method: POST
 
 ## Required Parameters:
-* client_id [Require, client Id]
-* consignmentRef [Require, e.g. "00187037343"]
+* consignmentRef [Require, value from /api/2.0/consignment, e.g. "007862951562"]
 
 ## Example
-Request
-GET https://api.parcelport.co.nz/api/1.0/labels?client_id=187&consignmentRef=0000187034567
 
-**Headers**
+**Request Headers**
+```
 Content-Type: application/json;
+```
 
-**Authorization**
-Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_t9x2hDo_tP840QIXfUmg0AGmRBfRHfeTeCjBGrK4ezMuLQ0jsyoDAb3cxUhkMniuJHYfSWhKlvyuQZPDqAffr4ggCY9qiojTgRm1s-EubJZK941SrtXBmTQKnkAWcru5MmXQvm0ziNAfZ_JhCKGoNHhpmnJVfQvGYMQNjMRknoE6GZl63GFZZ9tjMz2ICBPqEJsX67fWOoB2adbr58hA72omCMgLaX-1-DhYjlEnb_qhGljklPL3Qo6ohgykA
+**Request Authorization**
+```
+Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI87iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z
+```
+
+**Request Body**
+``` json
+{
+  "consignmentRef": "007862951562"
+}
+```
 
 **Responses**
 ``` json
 {
-    "url": "http://test.parcelport.co.nz/Consignment/DownloadPDF?ConsignmentSel=DW/bS/ZjRLU=",
-    "success": true,
-    "message": ""
+    "isSuccess": true,
+    "data": {
+        "url": "http://localhost:35371/Consignment/DownloadPDF?ConsignmentSel=DmY7__1LYxV4="
+    }
 }
 ```
 

@@ -12,23 +12,25 @@ Allows third-party systems to get Payport customers’ API authorization token f
 URL: https://api.parcelport.co.nz/token
 
 ## Required Parameters:
-* username [Require]
-* password [Require]
-* grant_type [Require] [Must be 'password']
+- username [Required]
+- password [Required]
+- grant_type [Required, must be '*password*']
 
 ## Example
 Request 
 POST https://api.parcelport.co.nz/token
 
 **Headers**
+```
 Content-Type: application/json;
+```
 
 **x-www-form-urlencoded**
 ``` json
 {
-    username:"Test"
-    password:"Password"
-    grant_type: "password"
+    "username":"Test",
+    "password":"Password",
+    "grant_type": "password"
 }
 ```
 
