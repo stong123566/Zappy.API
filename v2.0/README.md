@@ -23,7 +23,7 @@ Allows third-party systems to get Payport customers’ API authorization token f
 Content-Type: application/json;
 ```
 
-**Request Body**
+**x-www-form-urlencoded**
 ``` json
 {
     "username":"Test",
