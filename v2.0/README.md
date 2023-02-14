@@ -24,12 +24,8 @@ Content-Type: x-www-form-urlencoded;
 ```
 
 **x-www-form-urlencoded**
-``` json
-{
-    "username":"Test",
-    "password":"Password",
-    "grant_type": "password"
-}
+```
+username=yourusername&password=yourpassword&grant_type=password
 ```
 
 **Responses**
