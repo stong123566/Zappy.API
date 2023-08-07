@@ -33,7 +33,7 @@ auth string has been passed).
 - **parcel_contents** [Require if International]
   - **description** - [Require if International, description of your products]
   - **quantity** - [Require if International, quantity of your products]
-  - **weight** - [Require if International, weight of your products]
+  - **weight_kg** - [Require if International, weight of your products]
   - **value** - [Require if International, value of your products]
 
 *PickupAddress*
@@ -61,7 +61,7 @@ auth string has been passed).
 - **contact_name** [Require, contact name]
 - **email** [Optional, email]
 - **company_name** [Optional, company name]
-- **phone** [Require if TNT, contact phone]
+- **phone** [Require if International, contact phone]
 - **instruction** [Optional, instruction]
 
 *Booking*
