@@ -24,7 +24,7 @@ auth string has been passed).
 - **parcel_contents** [Require if International]
   - **description** - [Require if International, description of your products]
   - **quantity** - [Require if International, quantity of your products]
-  - **weight** - [Require if International, weight of your products]
+  - **weight_kg** - [Require if International, weight of your products]
   - **value** - [Require if International, value of your products]
 
 *PickupAddress*
