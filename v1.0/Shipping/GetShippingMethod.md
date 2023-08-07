@@ -52,7 +52,7 @@ auth string has been passed).
 - **contact_name** [Require, contact name]
 - **email** [Optional, email]
 - **company_name** [Optional, company name]
-- **phone** [Require if TNT, contact phone]
+- **phone** [Require if International, contact phone]
 - **instruction** [Optional, instruction]
 
 *Parcelport satchel list*
