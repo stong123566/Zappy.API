@@ -22,6 +22,8 @@ auth string has been passed).
 - **weight** - [Required, weight of the parcel Kg]
 - **satchelCode** - [Required if using satchel, see the following table of *Parcelport satchel list* ]
 - **custRef** - [Optional reference of the item]
+- **packageContents** - [Required if international, a list of item in the parcel]
+  -- **description** [Required, description of item]
 
 *deliveryAddress*
 - **addressBody** [Require, unit number + street number + street name]
