@@ -53,12 +53,13 @@ The requestID need to be added in the request when you create a consignment, and
     "isSuccess": true,
     "data": {
         "consignmentRef": [
-            "007862951562"
+            "007862954443"
         ],
         "consignmentTrackinglRef": [
-            "2541300295156201AKL025JN"
+            "2541300295444301AKL003AN"
         ],
-        "totalPrice": 2.93
+        "totalPrice": 4.82,
+        "totalGst": 0.73
     }
 }
 ```
