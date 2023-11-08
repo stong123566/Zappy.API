@@ -160,34 +160,40 @@ Choose a carrier from the list of rate and [create a consignment](Consignment/RE
 {
     "isSuccess": true,
     "data": {
-        "quoteRequestId": "b70c310e-4838-4115-837f-b167250d3324",
-        "expiryDate": "2022-09-20T11:56:10.8279273+12:00",
+        "quoteRequestId": "98a13230-583d-4cc3-8278-c597dd30cfd5",
+        "expiryDate": "2023-11-10T08:58:28.4476751+13:00",
         "rates": [
             {
-                "carrierName": "Post Haste",
-                "carrierMethodId": "phms",
-                "totalPrice": 4.63
-            },
-            {
-                "carrierName": "Castle Parcels",
-                "carrierMethodId": "cplw",
-                "totalPrice": 4.63
+                "carrierName": "Fastway",
+                "carrierMethodId": "ft_freight",
+                "totalPrice": 7.01,
+                "totalGst": 1.05
             },
             {
                 "carrierName": "CourierPost",
                 "carrierMethodId": "CPOLP",
-                "totalPrice": 3.82
+                "totalPrice": 4.82,
+                "totalGst": 0.73
+            },
+            {
+                "carrierName": "CourierPost",
+                "carrierMethodId": "CPOLPOFF",
+                "totalPrice": 4.82,
+                "totalGst": 0.73
             }
         ],
         "errors": {
-            "post Haste Api": [
-                "Please check the errors collection if available to help identify which request data is incorrect"
+            "postHaste": [
+                "{\"DeliveryAddress.Lat\":[\"The Lat field is required.\"],\"DeliveryAddress.Lon\":[\"The Lon field is required.\"]}"
             ],
-            "castle Parcel Api": [
-                "Please check the errors collection if available to help identify which request data is incorrect"
+            "castleParcels": [
+                "{\"DeliveryAddress.Lat\":[\"The Lat field is required.\"],\"DeliveryAddress.Lon\":[\"The Lon field is required.\"]}"
             ],
-            "precise": [
-                "The min size of the parcel is 25kg or 0.125m³."
+            "kiwiExpress Oversize": [
+                "Please check the package details. The weight should be above 25kg and below 50kg(inc.), or the volumn should be above 0.125m³ and below 0.3m³(inc.)."
+            ],
+            "nw": [
+                "Not available in this route"
             ]
         }
     }
