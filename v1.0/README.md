@@ -49,7 +49,7 @@ Content-Type: application/json;
 
 # Get token using client credentials
 Log in to the Parcelport website first. Then, add your client credentials on the 'Settings -> API Secret Key' page. 
-Utilize the added 'ClientId' and 'Secret' to obtain the access token through the following URL: 
+Utilize the added 'ClientId' and 'Secret' to obtain the access token through the following URL:   
 https://api.parcelport.co.nz/token
 
 ## Required Parameters:
