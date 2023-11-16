@@ -20,7 +20,7 @@ Allows third-party systems to get Payport customers’ API authorization token f
 ## Example
 **Request Headers**
 ```
-Content-Type: x-www-form-urlencoded;
+Content-Type: application/json;
 ```
 
 **x-www-form-urlencoded**
