@@ -41,8 +41,6 @@ auth string has been passed).
 - **address_city** [Require, city]
 - **address_country** [Require, country code, e.g., "NZ" for NewZealand]
 - **address_postcode** [Require, postcode]
-- **address_number** [Require, street number]
-- **address_street** [Require, street name]
 - **address_suburb** [Require, suburb]
 - **contact_name** [Require, contact name]
 - **email** [Require, sender email]
@@ -55,8 +53,6 @@ auth string has been passed).
 - **address_city** [Require, city]
 - **address_country** [Require, country code, e.g., "NZ" for NewZealand]
 - **address_postcode** [Require, postcode]
-- **address_number** [Require, street number]
-- **address_street** [Require, street name]
 - **address_suburb** [Require, suburb]
 - **contact_name** [Require, contact name]
 - **email** [Optional, email]
@@ -141,8 +137,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     "address_city": "Christchurch",
     "address_country": "NZ",
     "address_postcode": 8053,
-    "address_number": "17",
-    "address_street": "Witbrock Crescent",
     "address_suburb": "Burnside",
     "contact_name": "Alice"
   },
@@ -151,8 +145,6 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
     "address_city": "Auckland",
     "address_country": "NZ",
     "address_postcode": 1010,
-    "address_number": "12",
-    "address_street": "Pitt Street",
     "address_suburb": "Auckland Central",
     "contact_name": "bob",
     "email": "bob@domain.com"
