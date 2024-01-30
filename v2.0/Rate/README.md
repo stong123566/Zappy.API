@@ -45,6 +45,7 @@ auth string has been passed).
 - **instruction** [Optional, instruction]
 - **addressLat** [Optional, latitude]
 - **addressLng** [Optional, longitude]
+- **isCommercial** [Optional, is commercial address]
 
 *pickupAddress*
 - **addressBody** [Require, unit number + street number + street name]
@@ -60,6 +61,7 @@ auth string has been passed).
 - **instruction** [Optional, instruction]
 - **addressLat** [Optional, latitude]
 - **addressLng** [Optional, longitude]
+- **isCommercial** [Optional, is commercial address]
 
 *Parcelport satchel list*
 <table>
