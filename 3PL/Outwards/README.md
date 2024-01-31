@@ -22,7 +22,7 @@ auth string has been passed).
 *RecipientAddressSuburb* - [Required if delivery]  
 *RecipientAddressCity* - [Required if delivery]  
 *RecipientAddressStreet* - [Required if delivery]  
-*RecipientAddressState* - [Required if delivery]  
+*RecipientAddressState* - [Optional, it is relvant to the country]  
 *RecipientAddressPostcode* - [Required if delivery]  
 *RecipientAddressCountry* - [Required if delivery]  
 *RecipientInstruction* - [Optional]  
