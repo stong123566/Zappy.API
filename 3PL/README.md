@@ -11,10 +11,10 @@ Parcelport 3PL API provides an access to enable you to manage your inventories u
 
 ## Common response (Json)
 
-*IsSuccess*  - ['*True*' - Success, '*False*' - Has errors]
-*StatusCode* - [An error code. Included only if the '*IsSuccess*' is '*False*']
-*Errors* - [A list of error messages. Included only if the '*IsSuccess*' is '*False*']
-*Data* - [Optional. Included only if the '*IsSuccess*' is '*True*']
+*IsSuccess*  - ['*True*' - Success, '*False*' - Has errors]  
+*StatusCode* - [An error code. Included only if the '*IsSuccess*' is '*False*']  
+*Errors* - [A list of error messages. Included only if the '*IsSuccess*' is '*False*']  
+*Data* - [Optional. Included only if the '*IsSuccess*' is '*True*']  
 
 ***
 # Get token
