@@ -5,7 +5,7 @@ Parcelport 3PL API provides an access to enable you to manage your inventories u
 ***
 
 ## UAT URL: http://3.27.4.251:10086/api  
-## Live URL: http://52.62.12.60/api  
+## Live URL: http://3pl.parcelport.co/api  
 
 ***
 
