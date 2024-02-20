@@ -39,6 +39,10 @@ auth string has been passed).
     <td>The outwards is currently being processed.</td>
   </tr>
   <tr>
+    <td>4</td>
+    <td>The outwards is ready for pick up.</td>
+  </tr>
+  <tr>
     <td>6</td>
     <td>The outwards has been picked up.</td>
   </tr>
@@ -65,9 +69,15 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
 {
     "IsSuccess": true,
     "Data": {
-        "ProcessStatus": "1",
-        "StatusDescription": "The outwards is currently being processed.",
-        "Tracking": []
+        "ProcessStatus": "4",
+        "StatusDescription": "The outwards is ready for pick up.",
+        "Tracking": [
+            {
+                "Carrier": "Fastway - ft_freight",
+                "TrackingRef": "MX0010304990",
+                "TrackingLink": "https://www.aramex.co.nz/tools/track?l=MX0010304990"
+            }
+        ]
     }
 }
 ```
