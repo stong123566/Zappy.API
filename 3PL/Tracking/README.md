@@ -15,7 +15,7 @@ auth string has been passed).
 *Data* - [A Json Object]
 - **ProcessStatus** - [Refer to the 'Process Status code table' below]
 - **StatusDescription** - [A description for 'ProcessStatus']
-- **DatePickedUpUtc** - [A UTC datetime indicates when the parcel was picked up. Nullable.]
+- **DatePickedUpUtc** - [A UTC datetime indicates when the parcel was picked up by carrier or recipient. Nullable.]
 - **Tracking** - [A list of tracking information.]
   - **Carrier** 
   - **TrackingRef**
