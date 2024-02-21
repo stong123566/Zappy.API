@@ -15,7 +15,8 @@ auth string has been passed).
 *Data* - [A Json Object]
 - **ProcessStatus** - [Refer to the 'Process Status code table' below]
 - **StatusDescription** - [A description for 'ProcessStatus']
-- **Tracking** - [A list of tracking information]
+- **DatePickedUpUtc** - [A UTC datetime indicates when the parcel was picked up. Nullable.]
+- **Tracking** - [A list of tracking information.]
   - **Carrier** 
   - **TrackingRef**
   - **TrackingLink**
@@ -69,13 +70,14 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
 {
     "IsSuccess": true,
     "Data": {
-        "ProcessStatus": "4",
-        "StatusDescription": "The outwards is ready for pick up.",
+        "ProcessStatus": "6",
+        "StatusDescription": "The outwards has been picked up.",
+        "DatePickedUpUtc": "2024-02-19T01:12:37.1704624",
         "Tracking": [
             {
-                "Carrier": "Fastway - ft_freight",
-                "TrackingRef": "MX0010304990",
-                "TrackingLink": "https://www.aramex.co.nz/tools/track?l=MX0010304990"
+                "Carrier": "CourierPost - CPOLP",
+                "TrackingRef": "00794210379148969597",
+                "TrackingLink": "https://www.nzpost.co.nz/tools/tracking/item/00794210379148969597"
             }
         ]
     }
