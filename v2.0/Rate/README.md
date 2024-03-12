@@ -126,7 +126,8 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
       "height": "20",
       "width": "30",
       "weight": "0.5",
-      "custRef": "09-2101-00021"
+      "custRef": "09-2101-00021",
+      "packageName": "No1-white box"
     }
   ],
   "deliveryAddress": {
