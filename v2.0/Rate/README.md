@@ -22,6 +22,7 @@ auth string has been passed).
 - **weight** - [Required, weight of the parcel Kg]
 - **satchelCode** - [Required if using satchel, see the following table of *Parcelport satchel list* ]
 - **custRef** - [Optional reference of the item]
+- **packageName** - [Optional custom package name]
 - **insuranceRequired** - [Required if international, true / false]
 - **insuredValueAmount** - [Required if international, insured value]
 - **currency** - [Optional, currency of the insuredValueAmount]
