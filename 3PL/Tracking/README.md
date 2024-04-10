@@ -2,26 +2,37 @@
 
 Request for tracking history of an outwards order.
 
-- URL: /Outwards/{ReferencNumber}
+- URL: /Outwards/{ReferenceNumber}
 - Http Method: GET
 
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
 ## Required Parameters:
-* ReferencNumber [Require, the '*ReferenceNumber*' passed while creating the outwards request]
+* ReferenceNumber [Require, the '*ReferenceNumber*' passed while creating the outwards request]
 
 ## Response：
 *Data* - [A Json Object]
-- **ProcessStatus** - [Refer to the 'Process Status code table' below]
+- **DeliveryOrPickup** - [Delivery / Pickup]
+- **ProcessStatus** - [Refer to the 'Process status code table' below]
 - **StatusDescription** - [A description for 'ProcessStatus']
+- **CancelReasonCode** - [Refer to the 'Cancel reason code table' below]
+- **CancelReason** - [A description for 'CancelReasonCode']
 - **DatePickedUpUtc** - [A UTC datetime indicates when the parcel was picked up by carrier or recipient. Nullable.]
+- **InWarehouse** - [A list of process statuses that occurred in the warehouse..]
+  - **Status**  - [Refer to the 'Process status code table' below]
+  - **StatusDescription**
+  - **StatusTimeUtc**
 - **Tracking** - [A list of tracking information.]
   - **Carrier** 
   - **TrackingRef**
   - **TrackingLink**
+  - **Statuses** - [A list of tracking statuses.]
+    - **Status**  - [Refer to the 'Delivery status table' below]
+    - **StatusDescription**
+    - **StatusTimeUtc**
 
-*Process Status code table*
+*Process status code table*
 <table>
   <tr>
     <th>Process Status Code</th>
@@ -29,27 +40,75 @@ auth string has been passed).
   </tr>
   <tr>
     <td>0</td>
-    <td>The outwards request has not been submitted yet. Only if the outwards request is created on the client-side pages.</td>
+    <td>Not submitted yet. Only if the outwards request is created on the client-side pages.</td>
   </tr>
   <tr>
     <td>1</td>
-    <td>The outwards is waiting to be processed. The default status if the outwards request is created via API</td>
+    <td>Waiting to be processed. The default status if the outwards request is created via API</td>
   </tr>
   <tr>
     <td>3</td>
-    <td>The outwards is currently being processed.</td>
+    <td>Currently being processed</td>
   </tr>
   <tr>
     <td>4</td>
-    <td>The outwards is ready for pick up.</td>
+    <td>Ready for pick up</td>
   </tr>
   <tr>
     <td>6</td>
-    <td>The outwards has been picked up.</td>
+    <td>Picked up</td>
+  </tr>
+  <tr>
+    <td>7</td>
+    <td>Partially delivered</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Delivered</td>
   </tr>
   <tr>
     <td>9</td>
-    <td>The outwards has been cancelled.</td>
+    <td>Cancelled</td>
+  </tr>
+</table>
+
+*Cancel reason code table*
+<table>
+  <tr>
+    <th>Cancel Reason Code</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>0</td>
+    <td>As requested</td>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Insufficient Stock</td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td>Custom Cancelled</td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td>Others</td>
+  </tr>
+</table>
+
+*Delivery status table*
+<table>
+  <tr>
+    <th>Delivery Status</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>Picked Up</td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td>Delivered</td>
   </tr>
 </table>
 
@@ -70,14 +129,36 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
 {
     "IsSuccess": true,
     "Data": {
+        "DeliveryOrPickup": "Delivery",
         "ProcessStatus": "6",
-        "StatusDescription": "The outwards has been picked up.",
-        "DatePickedUpUtc": "2024-02-19T01:12:37.1704624",
+        "StatusDescription": "Picked up",
+        "CancelReasonCode": null,
+        "CancelReason": null,
+        "DatePickedUpUtc": "2024-04-09T02:20:13",
+        "InWarehouse": [
+            {
+                "Status": "3",
+                "StatusDescription": "Currently being processed",
+                "StatusTimeUtc": "2024-04-08T22:06:08.0106716"
+            },
+            {
+                "Status": "4",
+                "StatusDescription": "Ready for pick up",
+                "StatusTimeUtc": "2024-04-08T23:03:17.0864156"
+            }
+        ],
         "Tracking": [
             {
-                "Carrier": "CourierPost - CPOLP",
-                "TrackingRef": "00794210379148969597",
-                "TrackingLink": "https://www.nzpost.co.nz/tools/tracking/item/00794210379148969597"
+                "Carrier": "Fastway - ft_freight",
+                "TrackingRef": "MX00xxxxxxxx",
+                "TrackingLink": "https://www.aramex.co.nz/tools/track?l=MX00xxxxxxxx",
+                "Statuses": [
+                    {
+                        "Status": "1",
+                        "StatusDescription": "Picked Up",
+                        "StatusTimeUtc": "2024-04-09T02:20:13"
+                    }
+                ]
             }
         ]
     }
