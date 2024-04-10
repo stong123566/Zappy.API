@@ -23,7 +23,7 @@ auth string has been passed).
   - **Status**  - [Refer to the 'Process status code table' below.]
   - **StatusDescription**
   - **StatusTimeUtc**
-- **Tracking** - [A list of tracking information.]
+- **Tracking** - [A list of tracking information. Nullable.]
   - **Carrier** 
   - **TrackingRef**
   - **TrackingLink**
