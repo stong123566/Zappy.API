@@ -19,7 +19,7 @@ auth string has been passed).
 - **CancelReasonCode** - [Refer to the 'Cancel reason code table' below]
 - **CancelReason** - [A description for 'CancelReasonCode']
 - **DatePickedUpUtc** - [A UTC datetime indicates when the parcel was picked up by carrier or recipient. Nullable.]
-- **InWarehouse** - [A list of process statuses that occurred in the warehouse..]
+- **InWarehouse** - [A list of process statuses that occurred in the warehouse.]
   - **Status**  - [Refer to the 'Process status code table' below]
   - **StatusDescription**
   - **StatusTimeUtc**
