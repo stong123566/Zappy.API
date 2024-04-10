@@ -10,7 +10,7 @@ Once created, it will appear in our system and be processed by our warehouse sta
 auth string has been passed). 
 
 ## Required Parameters:
-*ReferencNumber* - [Required, a unique string to identify the outwards order]  
+*ReferenceNumber* - [Required, a unique string to identify the outwards order]  
 *Notes* - [Optional]  
 *DateOrder* - [Optional, format: '*yyyy-MM-dd*', default is '*Today*']  
 *NeedDelivery* - [Required, '*0*' - pickup, '*1*' - delivery]  
@@ -49,7 +49,7 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
 **Request Body**
 ``` json
 {
-    "ReferencNumber": "2024-01-30-0002",
+    "ReferenceNumber": "2024-01-30-0002",
     "Notes": "Test importing an outwards order via the API",
     "DateOrder": "2024-01-30",
     "NeedDelivery": "1",
