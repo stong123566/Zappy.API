@@ -9,18 +9,18 @@ Request for tracking history of an outwards order.
 auth string has been passed). 
 
 ## Required Parameters:
-* ReferenceNumber [Require, the '*ReferenceNumber*' passed while creating the outwards request]
+* ReferenceNumber [Require, the '*ReferenceNumber*' passed while creating the outwards request.]
 
 ## Response：
-*Data* - [A Json Object]
+*Data* - [A Json Object.]
 - **DeliveryOrPickup** - [Delivery / Pickup]
-- **ProcessStatus** - [Refer to the 'Process status code table' below]
-- **StatusDescription** - [A description for 'ProcessStatus']
-- **CancelReasonCode** - [Refer to the 'Cancel reason code table' below]
-- **CancelReason** - [A description for 'CancelReasonCode']
+- **ProcessStatus** - [Refer to the 'Process status code table' below.]
+- **StatusDescription** - [A description for 'ProcessStatus'.]
+- **CancelReasonCode** - [Refer to the 'Cancel reason code table' below. Nullable.]
+- **CancelReason** - [A description for 'CancelReasonCode'. Nullable.]
 - **DatePickedUpUtc** - [A UTC datetime indicates when the parcel was picked up by carrier or recipient. Nullable.]
 - **InWarehouse** - [A list of process statuses that occurred in the warehouse.]
-  - **Status**  - [Refer to the 'Process status code table' below]
+  - **Status**  - [Refer to the 'Process status code table' below.]
   - **StatusDescription**
   - **StatusTimeUtc**
 - **Tracking** - [A list of tracking information.]
