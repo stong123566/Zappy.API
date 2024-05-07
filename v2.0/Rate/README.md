@@ -131,21 +131,24 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
     }
   ],
   "deliveryAddress": {
-    "addressBody": "17 Witbrock Crescent",
-    "addressCity": "Christchurch",
-    "addressPostcode": "8053",
-    "addressSuburb": "Burnside",
-    "contactName": "Alice",
-    "email": "Alice@gmail.com",
-    "phone": "+64 09 234567"
+    "addressBody": "24 Ryland Park RD 5",
+    "addressPostcode": "5575",
+    "addressSuburb": "Levin",
+    "addressCity": "Levin",
+    "addressCountry": "NZ",
+    "contactName": "test",
+    "email": "123@456.com",
+    "phone": "+64 09 234567",
+    "mobile": "02101020304"
   },
   "pickupAddress": {
-    "addressBody": "12 Pitt Street",
+    "addressBody": "6 Heremai Street",
+    "addressPostcode": "0612",
+    "addressSuburb": "Henderson",
     "addressCity": "Auckland",
-    "addressPostcode": 1010,
-    "addressSuburb": "Auckland Central",
+    "addressCountry": "NZ",
     "contactName": "test",
-    "email": "services@parcelport.co",
+    "email": "123@456.com",
     "phone": "+64 09 234567",
     "mobile": "02101020304"
   }
@@ -162,6 +165,7 @@ Choose a carrier from the list of rate and [create a consignment](Consignment/RE
     "data": {
         "quoteRequestId": "98a13230-583d-4cc3-8278-c597dd30cfd5",
         "expiryDate": "2023-11-10T08:58:28.4476751+13:00",
+        "deliveryAddressIsRural": "1",
         "rates": [
             {
                 "carrierName": "Fastway",
