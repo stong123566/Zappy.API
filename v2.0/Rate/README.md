@@ -27,6 +27,7 @@ auth string has been passed).
 - **insuredValueAmount** - [Required if international, insured value]
 - **currency** - [Optional, currency of the insuredValueAmount]
 - **packageContents** - [Required if international, a list of item in the parcel]
+  - **hsTariffCode** [Required, HS tariff code]
   - **description** [Required, description of item]
   - **quantity** [Required, quantity of item]
   - **weight** [Required, weight of item]
