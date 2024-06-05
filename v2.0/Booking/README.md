@@ -2,7 +2,7 @@
 
 Creates a pick up event for the requested Pace service.
 
-- URL: https://api.parcelport.co.nz/api/2.0/booking
+- Endpoint: /api/2.0/booking
 - Http Method: POST
 
 *This API can only be called after the API authentication is approved (the correct

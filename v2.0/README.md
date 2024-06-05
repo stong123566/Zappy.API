@@ -1,15 +1,16 @@
-# ParcelPort System API(v2.0)
+# Zappy System API(v2.0)
 
-Parcel Port API provides an access to enable your customer to send parcels using our system.
+Zappy API provides an access to enable your customer to send parcels using our system.
 
 ***
 
-### Live URL: https://api.parcelport.co.nz  
+### UAT URL: https://test-api.zappy.nz  
+### Live URL: https://api.zappy.nz  
 
 # Get token
-Allows third-party systems to get Payport customers’ API authorization token from Payport System. The token will expire in 30Mins
+Allows third-party systems to get Zappy customers’ API authorization token from Zappy System. The token will expire in 30Mins
 
-- URL: https://api.parcelport.co.nz/token
+- Endpoint: /token
 - Http Method: POST
 
 ## Required Parameters:
@@ -42,9 +43,8 @@ username=yourusername&password=yourpassword&grant_type=password
 ***
 
 # Get token using client credentials
-Log in to the Parcelport website first. Then, add your client credentials on the 'Settings -> API Secret Key' page. 
-Utilize the added 'ClientId' and 'Secret' to obtain the access token via the following URL:   
-https://api.parcelport.co.nz/token
+Log in to the Zappy website first. Then, add your client credentials on the 'Settings -> API Secret Key' page. 
+Utilize the added 'ClientId' and 'Secret' to obtain the access token via the following endpoint: /token   
 
 ## Required Parameters:
 - client_id [Required]
@@ -53,7 +53,7 @@ https://api.parcelport.co.nz/token
 
 ## Example
 Request 
-POST https://api.parcelport.co.nz/token
+POST https://api.zappy.nz/token
 
 **Headers**
 ```

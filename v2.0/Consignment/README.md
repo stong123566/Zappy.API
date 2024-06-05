@@ -3,7 +3,7 @@
 Allows third-party systems to make consignments and get consignment tracking
 numbers based on the passed quoteRequestId and carrierMethodId. 
 
-- URL: https://api.parcelport.co.nz/api/2.0/consignment
+- Endpoint: /api/2.0/consignment
 - Http Method: POST
 
 *This API can only be called after the API authentication is approved (the correct

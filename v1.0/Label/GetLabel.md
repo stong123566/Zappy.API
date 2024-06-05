@@ -1,11 +1,11 @@
 # Get label
 
-Request for getting a URL to download the label in PDF from our main site https://freight.payport.co.nz/.
+Request for getting a URL to download the label in PDF from our main site https://ship.zappy.nz/.
 
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
-URL: https://api.parcelport.co.nz/api/1.0/labels?client_id={clientId}&consignmentRef={consignmentRef}
+Endpoint: /api/1.0/labels?client_id={clientId}&consignmentRef={consignmentRef}
 
 ## Required Parameters:
 * client_id [Require, client Id]
@@ -13,7 +13,7 @@ URL: https://api.parcelport.co.nz/api/1.0/labels?client_id={clientId}&consignmen
 
 ## Example
 Request
-GET https://api.parcelport.co.nz/api/1.0/labels?client_id=187&consignmentRef=0000187034567
+GET https://api.zappy.nz/api/1.0/labels?client_id=187&consignmentRef=0000187034567
 
 **Headers**
 Content-Type: application/json;
@@ -24,7 +24,7 @@ Bearer:bSEX9PltRH8uoHLmFdnt115OqEPPQTrrHpht6Bwq0yos9EW7o6vcBtrV23AF2TcuA8FJTabH_
 **Responses**
 ``` json
 {
-    "url": "http://test.parcelport.co.nz/Consignment/DownloadPDF?ConsignmentSel=DW/bS/ZjRLU=",
+    "url": "http://test.zappy.nz/Consignment/DownloadPDF?ConsignmentSel=DW/bS/ZjRLU=",
     "success": true,
     "message": ""
 }

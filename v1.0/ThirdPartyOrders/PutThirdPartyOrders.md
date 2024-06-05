@@ -2,7 +2,7 @@
 
 Allows third-party systems to put a list of orders from their system
 
-URL: https://api.parcelport.co.nz/api/1.0/thirdpartyorders
+Endpoint: /api/1.0/thirdpartyorders
 
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
@@ -29,7 +29,7 @@ auth string has been passed).
 
 ## Example
 Request
-PUT https://api.parcelport.co.nz/api/1.0/thirdpartyorders
+PUT https://api.zappy.nz/api/1.0/thirdpartyorders
 
 **Headers**
 Content-Type: application/json;

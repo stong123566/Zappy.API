@@ -5,7 +5,7 @@ Creates a pick up event for the requested Pace service.
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
-URL: https://api.parcelport.co.nz/api/1.0/bookings?client_id={client_id}&consignmentRef={consignmentRef}
+Endpoint: /api/1.0/bookings?client_id={client_id}&consignmentRef={consignmentRef}
 
 ## Required Parameters:
 * client_id [Require, e.g. "187"]
@@ -13,7 +13,7 @@ URL: https://api.parcelport.co.nz/api/1.0/bookings?client_id={client_id}&consign
 
 ## Example
 Request
-POST https://api.parcelport.co.nz/api/1.0/bookings?client_id=187&consignmentRef=00187034567
+POST https://api.zappy.nz/api/1.0/bookings?client_id=187&consignmentRef=00187034567
 
 **Headers**
 Content-Type: application/json;

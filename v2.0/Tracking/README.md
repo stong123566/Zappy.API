@@ -2,7 +2,7 @@
 
 Request for tracking history of a consignment
 
-- URL: https://api.parcelport.co.nz/api/2.0/tracking
+- Endpoint: /api/2.0/tracking
 - Http Method: POST
 
 *This API can only be called after the API authentication is approved (the correct

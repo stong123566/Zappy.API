@@ -3,7 +3,7 @@
 Allows third-party systems to get a list of applicable shipping methods based on
 the passed sender's address, recipient's address and parcel(s)’ dimensions.
 
-URL: https://api.parcelport.co.nz/api/1.0/shippingoptions?client_id=786
+Endpoint: /api/1.0/shippingoptions?client_id=786
 
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed).
@@ -51,7 +51,7 @@ auth string has been passed).
 - **phone** [Require if International, contact phone]
 - **instruction** [Optional, instruction]
 
-*Parcelport satchel list*
+*Zappy satchel list*
 <table>
   <tr>
     <th>Satchel name</th>
@@ -93,7 +93,7 @@ auth string has been passed).
 
 ## Example
 Request
-POST https://api.parcelport.co.nz/api/1.0/shippingoptions?client_id=110
+POST https://api.zappy.nz/api/1.0/shippingoptions?client_id=110
 
 **Headers**
 Content-Type: application/json;

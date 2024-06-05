@@ -1,11 +1,11 @@
 # Get label
 
-Request for getting a URL to download the label in PDF from our main site https://freight.payport.co.nz/.
+Request for getting a URL to download the label in PDF from our main site https://ship.zappy.nz/.
 
 *This API can only be called after the API authentication is approved (the correct
 auth string has been passed). 
 
-- URL: https://api.parcelport.co.nz/api/2.0/label
+- Endpoint: /api/2.0/label
 - Http Method: POST
 
 ## Required Parameters:

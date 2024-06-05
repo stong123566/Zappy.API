@@ -3,7 +3,7 @@
 Allows third-party systems to get a list of applicable shipping rate based on
 the passed sender's address, recipient's address and parcel(s)’ dimensions.
 
-- URL: https://api.parcelport.co.nz/api/2.0/rate
+- URL: /api/2.0/rate
 - Http Method: POST
 
 *This API can only be called after the API authentication is approved (the correct
@@ -20,7 +20,7 @@ auth string has been passed).
 - **width** - [Required if not using satchel, width of the parcel cm]
 - **height** - [Required if not using satchel, height of the parcel cm]
 - **weight** - [Required, weight of the parcel Kg]
-- **satchelCode** - [Required if using satchel, see the following table of *Parcelport satchel list* ]
+- **satchelCode** - [Required if using satchel, see the following table of *Zappy satchel list* ]
 - **custRef** - [Optional reference of the item]
 - **packageName** - [Optional custom package name]
 - **insuranceRequired** - [Required if international, true / false]
@@ -65,7 +65,7 @@ auth string has been passed).
 - **addressLng** [Optional, longitude]
 - **isCommercial** [Optional, is commercial address]
 
-*Parcelport satchel list*
+*Zappy satchel list*
 <table>
   <tr>
     <th>Satchel name</th>

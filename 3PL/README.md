@@ -1,11 +1,11 @@
-# ParcelPort System API(v2.0)
+# Zappy 3PL System API(v2.0)
 
-Parcelport 3PL API provides an access to enable you to manage your inventories using our system.
+Zappy 3PL API provides an access to enable you to manage your inventories using our system.
 
 ***
 
-## UAT URL: http://3pl-uat.parcelport.co/api  
-## Live URL: http://3pl.parcelport.co/api  
+## UAT URL: https://test-api-3pl.zappy.nz/api  
+## Live URL: https://api-3pl.zappy.nz/api  
 
 ***
 
