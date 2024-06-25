@@ -14,6 +14,8 @@ auth string has been passed).
 
 *isSaturday* - [Optional, default is '*0*', '*1*' if saturday delivery]
 
+*isPhotoRequired* - [Optional, default is '*0*', '*1*' if photo required. mutually exclusive with signature]
+
 *parcels* - [Required, a list of parcel]
 - **kind** - [Optional, default is '*0*', '*1*' if using satchel]
 - **length** - [Required if not using satchel, length of the parcel cm]
