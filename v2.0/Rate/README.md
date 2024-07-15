@@ -28,6 +28,7 @@ auth string has been passed).
 - **insuranceRequired** - [Required if international, true / false]
 - **insuredValueAmount** - [Required if international, insured value]
 - **currency** - [Optional, currency of the insuredValueAmount]
+- **contentType** - [Optional. Only apply for NZPost International services.]
 - **packageContents** - [Required if international, a list of item in the parcel]
   - **hsTariffCode** [Required, HS tariff code]
   - **description** [Required, description of item]
@@ -104,6 +105,38 @@ auth string has been passed).
   <tr>
     <td>Satchel 450x610 A2 Size</td>
     <td>a2</td>
+  </tr>
+</table>
+
+*Content type*
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>11</td>
+    <td>Sales of goods</td>
+  </tr>
+  <tr>
+    <td>91</td>
+    <td>Documents</td>
+  </tr>
+  <tr>
+    <td>21</td>
+    <td>Returned Goods</td>
+  </tr>
+  <tr>
+    <td>31</td>
+    <td>Gift</td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td>Commercial Sample</td>
+  </tr>
+  <tr>
+    <td>999</td>
+    <td>Other (default)</td>
   </tr>
 </table>
 
