@@ -28,7 +28,7 @@ auth string has been passed).
 - **insuranceRequired** - [Required if international, true / false]
 - **insuredValueAmount** - [Required if international, insured value]
 - **currency** - [Optional, currency of the insuredValueAmount]
-- **contentType** - [Optional. Only apply for NZPost International services.]
+- **contentType** - [Optional, choose a code from the 'Content Type' list below. Only apply for NZPost International services.]
 - **packageContents** - [Required if international, a list of item in the parcel]
   - **hsTariffCode** [Required, HS tariff code]
   - **description** [Required, description of item]
