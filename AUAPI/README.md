@@ -54,16 +54,16 @@ Content-Type: application/json;
 ***
 
 # Get rates
-- **[<code style="background-color:#009D77">POST</code> /api/2.0/rate](Rate/README.md)** returns a list of rate
+- **[<code style="background-color:#009D77">POST</code> /api/consignment/quote](Rate/README.md)** returns a list of rate
 
 # Create a consignment
-- **[<code style="background-color:#009D77">POST</code> /api/2.0/consignment](Consignment/README.md)** Create a consignment
+- **[<code style="background-color:#009D77">POST</code> /api/consignment/create](Consignment/README.md)** Create a consignment
 
 # Download label
-- **[<code style="background-color:#009D77">POST</code> /api/2.0/label](Label/README.md)** Get a url of label(PDF)
+- **[<code style="background-color:#009D77">GET</code> /api/consignment/label](Label/README.md)** Get a url of label(PDF)
 
 # Booking pickup
-- **[<code style="background-color:#009D77">POST</code> /api/2.0/booking](Booking/README.md)** Booking a pickup time
+- **[<code style="background-color:#009D77">GET</code> /api/consignment/book](Booking/README.md)** Booking a pickup time
 
 # Tracking
-- **[<code style="background-color:#009D77">POST</code> /api/2.0/tracking](Tracking/README.md)** Get tracking history of the consignment
+- **[<code style="background-color:#009D77">GET</code> /api/consignment/trackinghistory](Tracking/README.md)** Get tracking history of the consignment
