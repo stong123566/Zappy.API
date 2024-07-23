@@ -12,7 +12,7 @@ auth string has been passed).
 ## Required Parameters:
 *IsSignature* - [Optional, default is '*0*', '*1*' if signature required]
 
-*parcels* - [Required, a list of parcel]
+*Parcels* - [Required, a list of parcel]
 - **PackageId** - [Optional, default is '**', see the following table of *Zappy satchel list* ]
 - **Length** - [Required if not using satchel, length of the parcel cm]
 - **Width** - [Required if not using satchel, width of the parcel cm]
@@ -21,7 +21,7 @@ auth string has been passed).
 - **ItemRef** - [Optional reference of the item]
 - **ItemNo** - [Required index of the item]
 
-*deliveryAddress*
+*RecipientAddress*
 - **AddressStreet** [Require, unit number + street number + street name]
 - **AddressSuburb** [Require, suburb]
 - **AddressCity** [Require, city]
@@ -36,7 +36,7 @@ auth string has been passed).
 - **Instruction** [Optional, instruction]
 - **IsCommercialAddress** [Optional, is commercial address, default is '*0*', '*1*' if commercial address]
 
-*pickupAddress*
+*SenderAddress*
 - **AddressStreet** [Require, unit number + street number + street name]
 - **AddressSuburb** [Require, suburb]
 - **AddressCity** [Require, city]
