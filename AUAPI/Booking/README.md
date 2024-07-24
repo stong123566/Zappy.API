@@ -1,4 +1,4 @@
-# POST booking
+# GET booking
 
 Creates a pick up event for the requested Pace service.
 
