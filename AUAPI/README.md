@@ -63,7 +63,7 @@ Content-Type: application/json;
 - **[<code style="background-color:#009D77">GET</code> /api/consignment/label](Label/README.md)** Get a url of label(PDF)
 
 # Booking pickup
-- **[<code style="background-color:#009D77">GET</code> /api/consignment/book](Booking/README.md)** Booking a pickup time
+- **[<code style="background-color:#009D77">POST</code> /api/consignment/book](Booking/README.md)** Booking a pickup time
 
 # Tracking
 - **[<code style="background-color:#009D77">GET</code> /api/consignment/trackinghistory](Tracking/README.md)** Get tracking history of the consignment
