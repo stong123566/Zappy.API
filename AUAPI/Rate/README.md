@@ -23,6 +23,7 @@ auth string has been passed).
 
 *RecipientAddress*
 - **AddressStreet** [Require, unit number + street number + street name]
+- **AddressState** [Require, state]
 - **AddressSuburb** [Require, suburb]
 - **AddressCity** [Require, city]
 - **AddressPostcode** [Require, postcode]
@@ -38,6 +39,7 @@ auth string has been passed).
 
 *SenderAddress*
 - **AddressStreet** [Require, unit number + street number + street name]
+- **AddressState** [Require, state]
 - **AddressSuburb** [Require, suburb]
 - **AddressCity** [Require, city]
 - **AddressPostcode** [Require, postcode]
