@@ -16,6 +16,12 @@ auth string has been passed).
 
 *isPhotoRequired* - [Optional, default is '*0*', '*1*' if photo required. mutually exclusive with signature]
 
+*isDG* - [Optional, default is '*0*', '*1*' if sending DG. DG Account is required if sending DG, please contact our customer service for more information.]
+
+*isR18* - [Optional, default is '*0*', '*1*' if Age Restricted]
+
+*customsCode* - [Optional. Identification number assigned by overseas tax authorities. For example: IOSS Number (EU),EORI number (UK and EU),ABN/ABR(Australia).]
+
 *parcels* - [Required, a list of parcel]
 - **kind** - [Optional, default is '*0*', '*1*' if using satchel]
 - **length** - [Required if not using satchel, length of the parcel cm]
