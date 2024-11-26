@@ -68,7 +68,7 @@ auth string has been passed).
 - **addressBuilding** [Optional, building]
 - **email** [Require, sender email]
 - **phone** [Optional, contact phone]
-- **companyName** [Optional, company name] 
+- **companyName** [Optional, company name. Required for the courier 'Fliway'.] 
 - **instruction** [Optional, instruction]
 - **addressLat** [Optional, latitude]
 - **addressLng** [Optional, longitude]
@@ -180,8 +180,7 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
     "addressCountry": "NZ",
     "contactName": "test",
     "email": "123@456.com",
-    "phone": "+64 09 234567",
-    "mobile": "02101020304"
+    "phone": "02101020304"
   },
   "pickupAddress": {
     "addressBody": "6 Heremai Street",
@@ -191,8 +190,8 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
     "addressCountry": "NZ",
     "contactName": "test",
     "email": "123@456.com",
-    "phone": "+64 09 234567",
-    "mobile": "02101020304"
+    "phone": "02101020304",
+    "companyName": "Zappy"
   }
 }
 ```
