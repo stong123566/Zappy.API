@@ -7,42 +7,8 @@ Zappy API provides an access to enable your customer to send parcels using our s
 ### UAT URL: https://test-api.zappy.nz  
 ### Live URL: https://api.zappy.nz  
 
-# Get token
-Allows third-party systems to get Zappy customers’ API authorization token from Zappy System. The token will expire in 30Mins
-
-- Endpoint: /token
-- Http Method: POST
-
-## Required Parameters:
-- username [Required]
-- password [Required]
-- grant_type [Required, must be '*password*']
-
-## Example
-**Request Headers**
-```
-Content-Type: application/json;
-```
-
-**x-www-form-urlencoded**
-```
-username=yourusername&password=yourpassword&grant_type=password
-```
-
-**Responses**
-``` json
-{
-    "isSuccess": true,
-    "accessToken": "XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI87iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z",
-    "access_token": "XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2VmbdGyZu7yBGANnCUVMDzxelycDQXn9xBxqobDBAVs70nslc4C90PJ6jmtEI56U5SD8ms5c7ubKOa6DR0rLb_GTY4kXitqHPsPpCaUKckwGSIyCwGeZcAx60A50Na2CTISg5CfCGFTTAOQ6znVRLkJIb4fbbI87iYkBLDbQb2S09iFAqMc0odR9lpziU3BS5y41fZBXHwUUCEwk2-EFs7RFS_L6WT0zRcBSlwluqGchGuiLCg7d3NT1bZEPcf8u_BQFc_Wnkjd_pf4RHdt7pBHa6mgDib5ao1hugdE5z",
-    "expiresIn": 86399,
-    "tokenType": "bearer"
-}
-```
-
-***
-
-# Get token using client credentials
+# Get token 
+Allows third-party systems to get Zappy customers’ API authorization token from Zappy System. The token will expire in 1 day.
 Log in to the Zappy website first. Then, add your client credentials on the 'Settings -> API Secret Key' page. 
 Utilize the added 'ClientId' and 'Secret' to obtain the access token via the following endpoint: /token   
 
