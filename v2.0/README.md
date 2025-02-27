@@ -8,9 +8,9 @@ Zappy API provides an access to enable your customer to send parcels using our s
 ### Live URL: https://api.zappy.nz  
 
 # Get token 
-Allows third-party systems to get Zappy customers’ API authorization token from Zappy System. The token will expire in 1 day.
-Log in to the Zappy website first. Then, add your client credentials on the 'Settings -> API Secret Key' page. 
-Utilize the added 'ClientId' and 'Secret' to obtain the access token via the following endpoint: /token   
+Allows third-party systems to get Zappy customers’ API authorization token from Zappy System. The token will expire in 1 day.  
+- Log in to the Zappy website first. Then, add your client credentials on the 'Settings -> API Secret Key' page. 
+- Utilize the added 'ClientId' and 'Secret' to obtain the access token via the following endpoint: /token   
 
 ## Required Parameters:
 - client_id [Required]
