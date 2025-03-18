@@ -3,7 +3,7 @@
 Allows third-party systems to get a list of applicable shipping rate based on
 the passed sender's address, recipient's address and parcel(s)’ dimensions.
 
-- URL: /api/2.0/rate/getsingular
+- URL: /api/2.0/rate/getsinglecarrier
 - Http Method: POST
 
 *This API can only be called after the API authentication is approved (the correct
