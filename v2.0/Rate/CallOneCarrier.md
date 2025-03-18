@@ -247,38 +247,13 @@ Choose a carrier from the list of rate and [create a consignment](Consignment/RE
         "deliveryAddressIsRural": "1",
         "rates": [
             {
-                "carrierName": "Fastway",
-                "carrierMethodId": "ft_freight",
-                "totalPrice": 7.01,
-                "totalGst": 1.05
-            },
-            {
-                "carrierName": "CourierPost",
-                "carrierMethodId": "CPOLP",
-                "totalPrice": 4.82,
-                "totalGst": 0.73
-            },
-            {
                 "carrierName": "CourierPost",
                 "carrierMethodId": "CPOLPOFF",
                 "totalPrice": 4.82,
                 "totalGst": 0.73
             }
         ],
-        "errors": {
-            "postHaste": [
-                "{\"DeliveryAddress.Lat\":[\"The Lat field is required.\"],\"DeliveryAddress.Lon\":[\"The Lon field is required.\"]}"
-            ],
-            "castleParcels": [
-                "{\"DeliveryAddress.Lat\":[\"The Lat field is required.\"],\"DeliveryAddress.Lon\":[\"The Lon field is required.\"]}"
-            ],
-            "kiwiExpress Oversize": [
-                "Please check the package details. The weight should be above 25kg and below 50kg(inc.), or the volumn should be above 0.125m³ and below 0.3m³(inc.)."
-            ],
-            "nw": [
-                "Not available in this route"
-            ]
-        }
+        "errors": {}
     }
 }
 ```
