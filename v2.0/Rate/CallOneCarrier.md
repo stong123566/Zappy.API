@@ -160,7 +160,7 @@ auth string has been passed).
   </tr>
   <tr>
     <td>apinewph</td>
-    <td>Post Haste Api (new)</td>
+    <td>Post Haste Api</td>
   </tr>
   <tr>
     <td>fliway</td>
@@ -168,7 +168,7 @@ auth string has been passed).
   </tr>
   <tr>
     <td>ft</td>
-    <td>Fastway</td>
+    <td>Aramex</td>
   </tr>
   <tr>
     <td>np</td>
