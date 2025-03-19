@@ -1,4 +1,4 @@
-#  Get the available shipping rates for a single item
+#  Get the available shipping rates for Specific Carrier
 
 Allows third-party systems to get a list of applicable shipping rate based on
 the passed sender's address, recipient's address and parcel(s)’ dimensions.
