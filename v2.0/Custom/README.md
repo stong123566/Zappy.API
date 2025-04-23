@@ -1,5 +1,5 @@
 # Create new third-party orders
-To use this Api, you must first contact the administrator to apply for third-party integration Custom
+To use this API, please contact the administrator to apply for third-party integration (Custom) first.
 
 - Endpoint: /api/2.0/custom/create
 - Http Method: POST
@@ -160,7 +160,7 @@ Responses A JSON encoded string.
 
 
 # Update third-party orders
-To use this Api, you must first contact the administrator to apply for third-party integration Custom
+To use this API, please contact the administrator to apply for third-party integration (Custom) first.
 
 - Endpoint: /api/2.0/custom/update
 - Http Method: POST
@@ -319,7 +319,7 @@ Responses A JSON encoded string.
 ***
 
 # Search third-party orders
-To use this Api, you must first contact the administrator to apply for third-party integration Custom
+To use this API, please contact the administrator to apply for third-party integration (Custom) first.
 
 - Endpoint: /api/2.0/custom/search
 - Http Method: POST
