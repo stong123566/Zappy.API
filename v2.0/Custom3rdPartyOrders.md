@@ -1,4 +1,4 @@
-# Create new third-party orders
+# Create new Custom third-party orders
 To use this API, please contact the administrator to apply for third-party integration (Custom) first.
 
 - Endpoint: /api/2.0/custom/create
