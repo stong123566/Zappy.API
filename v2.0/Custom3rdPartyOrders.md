@@ -62,7 +62,9 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
             "address_suburb":"Fitzherbert",
             "address_city":"Palmerston North",
             "address_post_code":"4410",
-            "contact_number":"23233434"
+            "contact_number":"23233434",
+            "address_country":"NZ",
+            "address_state" : "Palmerston"
         },
         "order_items":[
             {
@@ -109,7 +111,9 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
             "address_suburb":"Fitzherbert",
             "address_city":"Palmerston North",
             "address_post_code":"4410",
-            "contact_number":"23233434"
+            "contact_number":"23233434",
+            "address_country":"NZ",
+            "address_state" : "Palmerston"
         },
         "order_items":[
             {
@@ -224,7 +228,9 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
             "address_suburb":"Fitzherbert",
             "address_city":"Palmerston North",
             "address_post_code":"4410",
-            "contact_number":"23233434"
+            "contact_number":"23233434",
+            "address_country":"NZ",
+            "address_state" : "Palmerston"
         },
         "order_items":[
             {
@@ -271,7 +277,9 @@ Bearer:XlES6IXxqQZwo37CoB9ydlZmWQV84VdNhv-MF0WXpr9SUJqv3bL5CsBIDTqrDildBRBkzo6J2
             "address_suburb":"Fitzherbert",
             "address_city":"Palmerston North",
             "address_post_code":"4410",
-            "contact_number":"23233434"
+            "contact_number":"23233434",
+            "address_country":"NZ",
+            "address_state" : "Palmerston"
         },
         "order_items":[
             {
@@ -333,7 +341,7 @@ To use this API, please contact the administrator to apply for third-party integ
 
 *pageNumber* - [Require,page number,Integer greater than 0]
 
-*pageSize* - [Require,page size,Integer greater than 0]
+*pageSize* - [Require,page size,Integer greater than 0,Maximum value 50]
 
 ## Example
 
