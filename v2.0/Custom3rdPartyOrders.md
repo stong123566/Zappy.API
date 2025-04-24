@@ -1,5 +1,6 @@
 # Create new Custom third-party orders
 To use this API, please contact the administrator to apply for third-party integration (Custom) first.
+You can upload a maximum of 20 pieces of data at a time.
 
 - Endpoint: /api/2.0/custom/create
 - Http Method: POST
@@ -159,8 +160,9 @@ Responses A JSON encoded string.
 ***
 
 
-# Update third-party orders
+# Update Custom third-party orders
 To use this API, please contact the administrator to apply for third-party integration (Custom) first.
+You can upload a maximum of 20 pieces of data at a time.
 
 - Endpoint: /api/2.0/custom/update
 - Http Method: POST
@@ -326,8 +328,11 @@ To use this API, please contact the administrator to apply for third-party integ
 
 ## Required Parameters:
 *keywords* - [Optional,keywords for querying data]
+
 *orderStatus* - [Optional,Third-party order status]
+
 *pageNumber* - [Require,page number,Integer greater than 0]
+
 *pageSize* - [Require,page size,Integer greater than 0]
 
 ## Example
