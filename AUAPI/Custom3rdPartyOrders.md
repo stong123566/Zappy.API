@@ -274,7 +274,7 @@ Responses A JSON encoded string.
 # Search third-party orders
 To use this API, please contact the administrator to apply for third-party integration (Custom) first.
 
-- Endpoint: /api/2.0/custom/search
+- Endpoint: /api/Custom/Search
 - Http Method: POST
 
 ## Required Parameters:
